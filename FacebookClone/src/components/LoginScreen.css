@@ -1,0 +1,88 @@
+.login-screen {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 980px;
+  margin-bottom: 40px;
+}
+
+.facebook-branding {
+  flex: 1;
+  padding-right: 32px;
+}
+
+.facebook-logo {
+  width: 301px;
+  height: 106px;
+  margin: -28px;
+}
+
+.tagline {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 32px;
+  width: 500px;
+  color: #1c1e21;
+  margin-top: 16px;
+}
+
+.copyright {
+  color: #737373;
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+@media (max-width: 898px) {
+  .login-screen {
+    background-color: #ffffff;
+    padding: 0;
+  }
+
+  .login-container {
+    max-width: 100%;
+  }
+
+  .login-content {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .facebook-branding {
+    padding-right: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .facebook-logo {
+    width: 240px;
+    height: 84px;
+    margin: 0;
+  }
+
+  .tagline {
+    font-size: 24px;
+    line-height: 28px;
+    width: auto;
+    max-width: 400px;
+    text-align: center;
+  }
+}
