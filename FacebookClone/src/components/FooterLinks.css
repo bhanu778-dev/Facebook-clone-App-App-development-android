@@ -1,0 +1,36 @@
+.footer-links {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.footer-link {
+  color: #8a8d91;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .footer-section {
+    gap: 8px;
+  }
+
+  .footer-link {
+    font-size: 11px;
+  }
+}
