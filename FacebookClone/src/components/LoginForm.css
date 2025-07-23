@@ -1,0 +1,168 @@
+.login-form-container {
+  flex: 1;
+  max-width: 396px;
+  margin: 0 auto;
+}
+
+.login-form-card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 28px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.login-input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 17px;
+  line-height: 16px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #1d2129;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login-input:focus {
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.login-input.error {
+  border-color: #fa383e;
+}
+
+.login-input::placeholder {
+  color: #8a8d91;
+}
+
+.error-message {
+  color: #fa383e;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.login-button {
+  width: 100%;
+  background: #1877f2;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 48px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 6px;
+}
+
+.login-button:hover {
+  background: #166fe5;
+}
+
+.login-button:active {
+  background: #1464d0;
+}
+
+.forgot-password {
+  color: #1877f2;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  margin: 16px 0;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  border-top: 1px solid #dadde1;
+  margin: 20px 0;
+}
+
+.create-account-button {
+  background: #42b883;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 48px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 0 auto;
+  display: block;
+  min-width: 194px;
+}
+
+.create-account-button:hover {
+  background: #36a085;
+}
+
+.create-account-button:active {
+  background: #2d8f73;
+}
+
+.create-page-text {
+  text-align: center;
+  font-size: 14px;
+  color: #1c1e21;
+  line-height: 20px;
+}
+
+.create-page-link {
+  color: #1c1e21;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.create-page-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 898px) {
+  .login-form-container {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .login-form-card {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 20px 0;
+    background: transparent;
+  }
+
+  .login-input {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .login-button {
+    font-size: 18px;
+    line-height: 44px;
+  }
+
+  .create-account-button {
+    font-size: 16px;
+    line-height: 44px;
+  }
+}
